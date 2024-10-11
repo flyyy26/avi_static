@@ -80,5 +80,97 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+    <script>
+        function popupMenuMobile() {
+            const popupMenuMobileVar = document.getElementById("menuMobilePopup");
+            popupMenuMobileVar.classList.toggle("active-menuMobilePopup");
+        }
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        effect: "fade",
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".programSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+            const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+            submenuToggles.forEach(toggle => {
+                toggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    // Hapus kelas 'active' dari semua submenu kecuali yang diklik
+                    submenuToggles.forEach(t => {
+                        if (t !== this) {
+                            t.classList.remove('active');
+                        }
+                    });
+                    // Toggle kelas 'active' pada elemen yang diklik
+                    this.classList.toggle('active');
+                });
+            });
+
+            // Event listener untuk mendeteksi klik di luar submenu
+            document.addEventListener('click', function (e) {
+                // Jika klik terjadi di luar elemen dengan kelas 'submenu-toggle' dan submenu
+                submenuToggles.forEach(toggle => {
+                    const submenu = toggle.nextElementSibling;
+                    if (submenu && !toggle.contains(e.target) && !submenu.contains(e.target)) {
+                        toggle.classList.remove('active');
+                    }
+                });
+            });
+
+            document.addEventListener('scroll', function (e) {
+                // Jika klik terjadi di luar elemen dengan kelas 'submenu-toggle' dan submenu
+                submenuToggles.forEach(toggle => {
+                    const submenu = toggle.nextElementSibling;
+                    if (submenu && !toggle.contains(e.target) && !submenu.contains(e.target)) {
+                        toggle.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+    </script>
+    <script src="js/tab.js"></script>
+    <script src="js/menu-mobile.js"></script>
 </body>
 </html>
