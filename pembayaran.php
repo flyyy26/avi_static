@@ -1,27 +1,36 @@
 <?php include 'template/header.php' ?>
 
-<div class="banner_page">
-    <h1>Pembayaran</h1>
+<div class="banner_page banner_page_program" style="background: linear-gradient(180deg, rgba(5, 5, 5, 0.637) 25.58%, #0f0f0f 100%), url(images/bg_pembayaran.png);">
+    <h1>Pembayaran Donasi</h1>
 </div>
-<div class="section_2_home">
-    <div class="form_container">
-        <div class="form_layout">
-            <form action="">
-                <div class="form_home form_home_sc">
-                    <div class="form_home_pembayaran">
-                        <input type="text" placeholder="Nama Lengkap">
-                        <input type="text" placeholder="Nomor HP">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <textarea name="" placeholder="Alamat" id=""></textarea>
-                </div>
-                <button class="btn_primary">Bayar donasi</button>
-            </form>
-        </div>
+<div class="section_pembayaran">
+    <!-- <div class="heading_section_pembayaran">
+        <h1>Isi Biodata & Salurkan Donasi</h1>
+        <p>Silakan isi data diri dan informasi yang diperlukan untuk menjadi bagian dari keluarga besar kami.</p>
+    </div> -->
+    <div class="section_2_heading">
+        <span>Pembayaran</span>
+        <h1>Satu langkah lagi untuk menyebarkan kebaikan dengan mudah</h1>
     </div>
-    <div class="form_bg"></div>
-    <img src="images/tree_left.png" alt="" class="tree_left">
-    <img src="images/tree_right.png" alt="" class="tree_right">
+    <div class="form_pembayaran">
+        <form action="">
+            <div class="form_pembayaran_double">
+                <input type="text" placeholder="Nama Lengkap*">
+                <input type="number" placeholder="Nomor Telepon*">
+            </div>
+            <div class="form_pembayaran_double">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Domisili">
+            </div>
+            <div class="form_pembayaran_single">
+                <input type="text" placeholder="Rekening Atas Nama*">
+            </div>
+            <div class="form_pembayaran_single">
+                <textarea name="" placeholder="Do'a & Harapan" id="" rows="4"></textarea>
+            </div>
+            <button>Bayar Sekarang</button>
+        </form>
+    </div>
 </div>
 
 <?php include 'template/footer.php' ?>

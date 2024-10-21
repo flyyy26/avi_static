@@ -18,28 +18,28 @@
         <nav>
             <ul>
                 <li><a href="index.php">Beranda</a></li>
-                <li class="has-submenu">
+                <!-- <li class="has-submenu">
                     <a href="#" class="submenu-toggle">Program <iconify-icon icon="fluent:chevron-down-32-filled"></iconify-icon></a>
                     <ul class="submenu">
                         <li><a href="program.php">Program Reguler</a></li>
                         <li><a href="program.php">Darurat Kemanusiaan</a></li>
                         <li><a href="program.php">Recovery Gaza</a></li>
                     </ul>
-                </li>
-                <!-- <li><a href="infaq.php">Infaq</a></li> -->
+                </li> -->
+                <li><a href="program.php">Program</a></li>
                 <li><a href="tentang-kami.php">Tentang Kami</a></li>
                 <li><a href="berita.php">Berita</a></li>
-                <li><a href="kontak.php">Kontak</a></li>
+                <li><a href="kontak.php">Kontak Kami</a></li>
             </ul>
         </nav>
     </div>
-    <nav id="menuMobilePopup">
+    <!-- <nav id="menuMobilePopup">
         <button class="close_btn" onclick="popupMenuMobile()"><iconify-icon icon="ic:round-close"></iconify-icon></button>
         <ul>
             <li><a href="index.php">Beranda</a></li>
-            <!-- <li><a href="infaq.php">Infaq</a></li> -->
+            <li><a href="infaq.php">Infaq</a></li>
             <li><a href="tentang-kami.php">Tentang Kami</a></li>
             <li><a href="berita.php">Berita</a></li>
             <li><a href="kontak.php">Kontak</a></li>
         </ul>
-    </nav>
+    </nav> -->

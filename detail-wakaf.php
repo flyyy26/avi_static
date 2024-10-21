@@ -1,6 +1,6 @@
 <?php include 'template/header.php' ?>
-<div class="banner_page banner_page_program" style="background: linear-gradient(180deg, rgba(5, 5, 5, 0.637) 25.58%, #0f0f0f 100%), url(images/banner_program.png);">
-    <h1>Wujudkan Kepedulian: Bantu Anak-anak Palestina</h1>
+<div class="banner_page banner_page_program" style="background: linear-gradient(180deg, rgba(5, 5, 5, 0.637) 25.58%, #0f0f0f 100%), url(images/bg_wakaf.png);">
+    <h1>Wakaf Meter Persegi Masjidil Aqsha </h1>
 </div>
 <div class="program_detail_section">
     <div class="program_detail_layout">
@@ -9,17 +9,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="program_detail_image">
-                            <img src="images/about_page.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="program_detail_image">
-                            <img src="images/program_image.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="program_detail_image">
-                            <img src="images/banner.png" alt="">
+                            <img src="images/wakaf.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -32,13 +22,14 @@
                 <div class="tab_content_layout">
                     <div id="London" class="tabcontent">
                         <div class="program_detail_desc_heading">
-                            <h1>Wujudkan Kepedulian: Bantu Anak-anak Palestina</h1>
+                            <h1>Wakaf Meter: Bersama Menjaga Masjidil Aqsa</h1>
                         </div>
                         <div class="program_detail_desc_content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae cupiditate quia qui. Cumque ut ab corporis fugiat, alias dolorem sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid adipisci assumenda error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni neque, delectus fugit exercitationem aliquam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam maxime animi placeat voluptatibus aperiam.</p>
-                            <img src="images/program_image.png" alt="">
-                            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dicta in aliquam similique laboriosam. Quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eos officiis reiciendis distinctio ratione excepturi aspernatur ut expedita tempora. Veniam sequi quibusdam nulla, nisi eos ut iste facere aut facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatem ut dignissimos, quos eligendi labore?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt tenetur accusamus, totam aliquam quisquam iste labore iure delectus quod maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit iste fuga praesentium nesciunt! Fugiat qui, possimus distinctio sunt mollitia aut voluptates placeat facilis suscipit illum non veniam quis id.</p>
+                            <p>Program Wakaf Meter merupakan proyek pembelian secara simbolis setiap meter dari 144.000 Meter Persegi kawasan Masjidil Aqsa. Setiap donasi yang diberikan akan digunakan untuk mendanai proyek pembangunan gedung komersial di Turki, yang hasilnya akan dialokasikan secara terus menerus untuk pemeliharaan dan renovasi Masjidil Aqsa. 
+</br></br>Melalui wakaf ini, setiap sumbangan dari donatur akan digunakan untuk menjaga keindahan dan kelayakan Masjidil Aqsa, serta memastikan akses bagi umat Muslim yang datang berziarah.
+</p>
+<p>Sertifikat wakaf produktif akan diterima setelah donasi disalurkan</p>
+                            
                         </div>
                     </div>
 
@@ -82,34 +73,21 @@
             </div>
         </div>
         <div class="program_detail_form">
-            <div class="program_detail_target">
-                <div class="program_detail_target_box">
-                    <h4>Tercapai</h4>
-                    <h1>Rp. 9,000,000</h1>
-                </div>
-                <div class="program_detail_target_box program_detail_target_box_end">
-                    <h4>Target</h4>
-                    <h1>Rp. 20,000,000</h1>
-                </div>
-            </div>
-            <div class="program_detail_range">
-                <div class="progress-bar-striped">
-                    <div style="width: 20%;"></div>
-                </div>
-            </div>
             <div class="program_detail_form_layout">
-                <h3>Masukkan Nominal</h3>
+                <h3>Masukkan Wakaf Terbaik</h3>
                 <form action="">
                     <div class="program_detail_form_box">
-                        <input type="text" placeholder="Masukkan disini">
+                        <input type="text" placeholder="Nama Lengkap">
+                        <input type="text" placeholder="Nomor Telepon">
+                        <input type="text" placeholder="Domisili">
+                        <input type="text" placeholder="Rekening Atas Nama">
+                        <input type="text" placeholder="Meter Terbaik, Donasi Seikhlasnya">
                         <div class="program_detail_btn_form">
-                            <button type="button">10.000</button>
-                            <button type="button">25.000</button>
-                            <button type="button">50.000</button>
-                            <button type="button">75.000</button>
-                            <button type="button">100.000</button>
-                            <button type="button">200.000</button>
-                            <button type="button">500.000</button>
+                            <button type="button">1 Meter</button>
+                            <button type="button">2 Meter</button>
+                            <button type="button">3 Meter</button>
+                            <button type="button">4 Meter</button>
+                            <button type="button">5 Meter</button>
                         </div>
                         <button type="submit" class="program_detail_submit">Lanjutkan Donasi</button>
                     </div>

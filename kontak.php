@@ -1,10 +1,9 @@
 <?php include 'template/header.php' ?>
 
-<div class="banner_page">
-    <h1>Kontak Kami</h1>
+<div class="banner_page banner_page_program" style="background: linear-gradient(180deg, rgba(5, 5, 5, 0.637) 25.58%, #0f0f0f 100%), url(images/banner_contact.png);">
+    <h1>Kontak AVI Humanity</h1>
 </div>
 <div class="contact_container">
-    <div class="divider divider_top divider_yellow"></div>
     <div class="contact_layout">
         <div class="contact_page">
             <div class="contact_page_content">

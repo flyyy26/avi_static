@@ -1,6 +1,6 @@
 <?php include 'template/header.php' ?>
-<div class="banner_page">
-    <h1>Berita</h1>
+<div class="banner_page banner_page_program" style="background: linear-gradient(180deg, rgba(5, 5, 5, 0.637) 25.58%, #0f0f0f 100%), url(images/banner_artikel.png);">
+    <h1>Berita Terbaru dari Avi Humanity</h1>
 </div>
 <div class="artikel_section">
     <div class="search_artikel_mobile">
@@ -14,6 +14,71 @@
     <div class="artikel_section_list_container">
         <div class="artikel_section_list">
             <!-- foreach disini -->
+            <div class="artikel_section_box">
+                <div class="artikel_section_image">
+                    <a href="detail-berita.php">
+                        <img src="images/program_image.png" alt="">
+                    </a>
+                </div>
+                <div class="artikel_section_content">
+                    <a href="detail-berita.php">
+                        <h1>Pentingnya Bantuan Kemanusiaan dalam Menghadapi Krisis Global</h1>
+                    </a>
+                    <span><iconify-icon icon="healthicons:calendar"></iconify-icon> September 28, 2024</span>
+                </div>
+            </div>
+            <div class="artikel_section_box">
+                <div class="artikel_section_image">
+                    <a href="detail-berita.php">
+                        <img src="images/program_image.png" alt="">
+                    </a>
+                </div>
+                <div class="artikel_section_content">
+                    <a href="detail-berita.php">
+                        <h1>Pentingnya Bantuan Kemanusiaan dalam Menghadapi Krisis Global</h1>
+                    </a>
+                    <span><iconify-icon icon="healthicons:calendar"></iconify-icon> September 28, 2024</span>
+                </div>
+            </div>
+            <div class="artikel_section_box">
+                <div class="artikel_section_image">
+                    <a href="detail-berita.php">
+                        <img src="images/program_image.png" alt="">
+                    </a>
+                </div>
+                <div class="artikel_section_content">
+                    <a href="detail-berita.php">
+                        <h1>Pentingnya Bantuan Kemanusiaan dalam Menghadapi Krisis Global</h1>
+                    </a>
+                    <span><iconify-icon icon="healthicons:calendar"></iconify-icon> September 28, 2024</span>
+                </div>
+            </div>
+            <div class="artikel_section_box">
+                <div class="artikel_section_image">
+                    <a href="detail-berita.php">
+                        <img src="images/program_image.png" alt="">
+                    </a>
+                </div>
+                <div class="artikel_section_content">
+                    <a href="detail-berita.php">
+                        <h1>Pentingnya Bantuan Kemanusiaan dalam Menghadapi Krisis Global</h1>
+                    </a>
+                    <span><iconify-icon icon="healthicons:calendar"></iconify-icon> September 28, 2024</span>
+                </div>
+            </div>
+            <div class="artikel_section_box">
+                <div class="artikel_section_image">
+                    <a href="detail-berita.php">
+                        <img src="images/program_image.png" alt="">
+                    </a>
+                </div>
+                <div class="artikel_section_content">
+                    <a href="detail-berita.php">
+                        <h1>Pentingnya Bantuan Kemanusiaan dalam Menghadapi Krisis Global</h1>
+                    </a>
+                    <span><iconify-icon icon="healthicons:calendar"></iconify-icon> September 28, 2024</span>
+                </div>
+            </div>
             <div class="artikel_section_box">
                 <div class="artikel_section_image">
                     <a href="detail-berita.php">

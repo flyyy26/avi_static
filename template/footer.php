@@ -40,7 +40,7 @@
                     <ul>
                         <li><a href="">FAQ</a></li>
                         <li><a href="">Keluhan</a></li>
-                        <li><a href="">Artikel</a></li>
+                        <li><a href="">Berita</a></li>
                     </ul>
                 </div>
             </div>
@@ -85,16 +85,78 @@
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
 
     <script>
+        // Get the modal
+        var modal = document.getElementById("popupModal");
+
+        // Get the image inside the modal
+        var modalImg = document.getElementById("popupImage");
+
+        // Get all the images that will trigger the popup
+        var triggers = document.querySelectorAll('.popup-trigger');
+
+        // Get the close button
+        var closeBtn = document.querySelector(".close");
+
+        // Loop through the triggers and add a click event listener to each one
+        triggers.forEach(function(trigger) {
+            trigger.addEventListener('click', function() {
+                // Show the modal
+                modal.style.display = "block";
+                // Set the src of the modal image to the clicked image's src
+                modalImg.src = this.src;
+            });
+        });
+
+        // When the user clicks on the close button, close the modal
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal image, close the modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+    <script>
         function popupMenuMobile() {
             const popupMenuMobileVar = document.getElementById("menuMobilePopup");
             popupMenuMobileVar.classList.toggle("active-menuMobilePopup");
         }
     </script>
     <script>
+        var swiper = new Swiper(".programSlideHome", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".bannerSlide", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop:true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>
+    <script>
         var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
         effect: "fade",
+        loop:true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
@@ -115,7 +177,7 @@
                 spaceBetween: 40,
                 },
                 1024: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 40,
                 },
             },

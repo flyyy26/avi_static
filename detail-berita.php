@@ -1,6 +1,6 @@
 <?php include 'template/header.php' ?>
-<div class="banner_page">
-    <h1>Berita</h1>
+<div class="banner_page banner_page_program" style="background: linear-gradient(180deg, rgba(5, 5, 5, 0.637) 25.58%, #0f0f0f 100%), url(images/program_image.png);">
+    <h1 class="heading_detail_berita">Pentingnya Bantuan Kemanusiaan dalam Menghadapi Krisis Global</h1>
 </div>
 <div class="artikel_section">
     <div class="search_artikel_mobile">
@@ -26,6 +26,31 @@
                     <img src="images/program_image.png" alt="">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, minima laudantium sunt molestias ipsam nostrum magni illum dicta numquam quia. Dolorum delectus asperiores placeat? Pariatur reiciendis vero incidunt eum veniam?</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur velit ut, pariatur placeat in ea nam nesciunt odio, ducimus, error eos repudiandae natus sapiente corrupti! Autem nemo doloribus, totam, obcaecati laudantium perferendis repudiandae laborum iusto, accusantium quod eius fugiat labore.</p>
+                </div>
+                <div class="artikel_detail_share">
+                    <h3>Bagikan Berita :</h3>
+                    <div class="artikel_detail_share_layout">
+                        <a href="#">
+                            <div class="artikel_detail_share_box">
+                                <iconify-icon icon="ic:baseline-facebook"></iconify-icon>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="artikel_detail_share_box">
+                                <iconify-icon icon="ic:baseline-telegram"></iconify-icon>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="artikel_detail_share_box">
+                                <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="artikel_detail_share_box">
+                                <iconify-icon icon="pajamas:twitter"></iconify-icon>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
