@@ -2168,17 +2168,24 @@ a{
         cursor: pointer;
     }
 
+    .logo_mobile{
+        display: none;
+    }
 
 @media (max-width:768px) {
     .header{
-        top: 6vw;
+        top: 0;
+        padding: 1vw 3vw;
+        padding-top: 2.4vw;
+        display: flex;
+        align-items: center;
     }
     nav{
         transform: translateX(-170%);
         position: fixed;
         left: 0;
         top: 0;
-        background: linear-gradient(180deg, rgba(20, 73, 89, 0.88) 0%, rgba(27, 153, 149, 0.88) 37.36%, rgba(27, 153, 149, 0.88) 64%, rgba(20, 73, 89, 0.88) 100%), url(../images/banner.png);
+        background-color: rgba(10, 10, 10, 0.788);
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -2186,25 +2193,52 @@ a{
         z-index: 100;
         transition: .4s all;
     }
+    .logo_mobile{
+        display: block;
+        width: 23vw;
+        margin-bottom: 4vw;
+    }
     #menuMobilePopup{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
     .active-menuMobilePopup{
         transform: translateX(0);
     }
     nav ul{
+        width: 80%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5vw;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 4vw;
+        background-color: white;
+        height: 100vh;
+        padding: 4vw;
+        position: relative;
+        border-right: .8vw solid #0099FF;
     }
     nav ul li a{
-        color: #fff;
-        font-size: 7.31vw;
-        text-transform: uppercase;
+        color: #000e18;
+        font-size: 4vw;
+    }
+    nav ul li:last-child{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 4vw;
+        width: 100%;
+    }
+    nav ul li:last-child a{
+        background-color: #0099FF;
+        color: white;
+        text-align: center;
+        padding: 1.6vw 2.4vw;
+        border-radius: 100vw;
+        margin-left: 0;
+        width: 100%;
+        display: block;
     }
     .close_btn{
         position: absolute;
@@ -2259,7 +2293,7 @@ a{
     }
     .hamburger iconify-icon{
         font-size: 9vw;
-        color: white;
+        color: #0099FF;
     }
     .divider{
         height: 1.9vw;
