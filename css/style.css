@@ -54,7 +54,7 @@
 }
 .banner{
     width: 100%;
-    height: 45vw;
+    height: 47vw;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -64,8 +64,14 @@
     padding: 0 3vw;
     padding-bottom: 4vw;
 }
+.bannerSlide .swiper-button-next, .bannerSlide .swiper-button-prev{
+    display: block !important;
+}
 .logo img{
     width: 5.3vw;
+}
+nav{
+    transform: translateX(0);
 }
 nav ul{
     display: flex;
@@ -91,6 +97,9 @@ nav ul li:last-child a{
     padding: .55vw 1.3vw;
     border-radius: 100vw;
     margin-left: 1vw;
+}
+#menuMobilePopup{
+    display: block !important;
 }
 .has-submenu{
     position: relative;
@@ -135,6 +144,9 @@ nav ul li:last-child a{
 }
 .has-submenu .submenu-toggle.active + .submenu {
     display: block;
+}
+.close_btn{
+    display: none;
 }
 .hamburger{
     display: none;
@@ -235,7 +247,6 @@ nav ul li:last-child a{
 .section_2_heading span{
     text-transform: uppercase;
     font-size: .9vw;
-    /* color: #F7CF14; */
     color: white;
     padding: .22vw .8vw;
     border-radius: 100vw;
@@ -556,7 +567,15 @@ a{
     font-size: .86vw;
 }
 .see_other_mobile{
-    display: none;
+    display: block;
+    margin: auto;
+    width: max-content;
+    background-color: #0099FF;
+    padding: .7vw 1.7vw;
+    border-radius: 100vw;
+}
+.see_other_mobile a{
+    color: white;
 }
 .program_share{
     display: flex;
@@ -2173,6 +2192,11 @@ a{
     }
 
 @media (max-width:768px) {
+    .heading_detail_berita{
+        font-size: 3.5vw !important;
+        padding: 0 5vw !important;
+        font-weight: 300 !important;
+    }
     .header{
         top: 0;
         padding: 1vw 3vw;
@@ -2246,6 +2270,7 @@ a{
         top: 6.7vw;
         background-color: transparent;
         border: none;
+        display: block;
         outline: none;
     }
     .close_btn iconify-icon{
@@ -2256,30 +2281,43 @@ a{
         width: 15.5vw;
     }
     .banner{
-        height: max-content;
+        height: 110vw;
+        justify-content: center;
         flex-direction: column;
+    }
+    .bannerSlide .swiper-button-next, .bannerSlide .swiper-button-prev{
+        display: none !important;
     }
     .banner_icon{
         position: relative;
         width: 90vw;
     }
+    .bannerSlide .swiper-pagination-bullet{
+        width: 6vw;
+        height: 1.65vw;
+    }
     .content_banner{
-        padding: 9vw 9.4vw;
-        padding-top: 36vw;
+        padding: 9vw 3vw;
+        padding-top: 15vw;
         text-align: center;
     }
     .content_banner span{
-        font-size: 4.2vw;
+        font-size: 3.5vw;
     }
     .content_banner h1{
         width: 100%;
-        font-size: 8vw;
-        margin-top: 2.8vw;
-        margin-bottom: 6vw;
+        font-size: 7vw;
+        margin-top: 4vw;
+        margin-bottom: 5vw;
+    }
+    .content_banner p{
+        font-size: 3vw;
+        color: white;
+        margin-bottom: 7vw;
     }
     .btn_primary{
-        border-radius: .9vw;
-        font-size: 3.8vw;
+        border-radius: 1.3vw;
+        font-size: 3.4vw;
         padding: 2.2vw 3.8vw;
     }
     .hamburger{
@@ -2358,7 +2396,7 @@ a{
     }
 
     .section_3_home{
-        padding: 11vw 10vw;
+        padding: 11vw 5vw;
         padding-bottom: 11vw;
     }
     .heading_home{
@@ -2394,6 +2432,12 @@ a{
         overflow-x: scroll;
         padding: 0 0;
     }
+    .programSlideHome{
+        margin-top: 7vw;
+    }
+    .programSlideHome .swiper-wrapper{
+        padding-bottom:12vw;
+    }
     .layout_program_page .program_image{
         height: 43vw;
     }
@@ -2404,31 +2448,48 @@ a{
         border-radius: 2.6vw;
     }
     .program_image{
-        height: 40vw;
+        height: 70vw;
     }
     .program_content{
-        padding: 3.2vw;
-        padding-top: 4.6vw;
+        padding: 4vw;
+        padding-top: 4.4vw;
+        text-align: center;
     }
-    .program_content h5{
+    .program_content h1{
         font-size: 4vw;
+        width: 100%;
         margin-bottom: 3vw;
+        margin-top: 1.6vw;
+        -webkit-line-clamp: 2;
     }
     .program_content span{
-        font-size: 3.4vw;
+        font-size: 3.3vw;
+        width: 100%;
+        display: block;
+    }
+    .program_content span font{
+        font-size: 3.6vw;
     }
     .layout_program_page .program_content span{
         font-size: 3vw;
     }
     .program_share{
         gap: 3.7vw;
-        margin-top: 4.2vw;
+        margin-top: 3vw;
+        justify-content: center;
     }
     .layout_program_page .program_share{
         margin-top: 5.3vw;
     }
     .program_share a{
-        font-size: 4.5vw;
+        font-size: 5vw;
+    }
+    .program_button{
+        margin-top: 4vw;
+    }
+    .program_button button{
+        font-size:3.5vw;
+        padding: 2vw;
     }
     .btn_box{
         margin-top: 4.3vw;
@@ -2451,40 +2512,88 @@ a{
         margin-top: 9vw;
     }
     .see_other_mobile a{
-        color: #145569;
-        font-size: 3.8vw;
+        color: #0099FF;
+        font-size: 3.6vw;
         font-weight: 600;
         text-decoration: none;
-        border-bottom: .1vw solid #145569;
+        border-bottom: .1vw solid #0099FF;
     }
 
     .section_4_home{
         grid-template-columns: 100%;
-        padding: 0 10vw;
-        padding-top: 7vw;
-        padding-right: 7vw;
+        padding: 0 5vw;
+        padding-top: 2vw;
+        padding-right: 5;
         overflow: hidden;
     }
+    .section_4_home_box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section_4_content ul{
+        margin-bottom: 5vw;
+    }
+    .section_4_content ul li{
+        font-size: 3.6vw;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: .8vw;
+        margin-bottom: .6vw;
+    }
+    .section_4_content ul li::before{
+        padding-right: .4vw;
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z' clip-rule='evenodd'/%3E%3C/svg%3E");
+        background-color: #0099FF;
+        -webkit-mask-image: var(--svg);
+        mask-image: var(--svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+    }
+    .section_4_image{
+        background-color: #0099FF;
+        height: max-content;
+        padding-bottom: 3vw;
+        padding-left: 2vw;
+        padding-right: 0;
+    }
+    .section_4_image span{
+        color: white;
+        font-size: 2.7vw;
+    }
+    .section_4_image_box{
+        width: 100%;
+        height: 70vw;
+        position: relative;
+        margin-bottom: 2.6vw;
+        margin-left: 0;
+    }
     .section_4_content{
-        padding-top: 4.5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
     }
 
     .section_4_content h1{
-        font-size: 8vw;
+        font-size: 3.8vw;
         margin-bottom: 4vw;
     }
     .section_4_content p{
-        font-size: 4vw;
-        padding-right: 2vw;
-        margin-bottom: 8vw;
+        font-size: 3.5vw;
+        padding-right: 0;
+        margin-bottom: 4vw;
     }
     .section_4_image img{
         width: 100%;
-        margin-bottom: -1vw;
-        margin-top: 11vw;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     .article_section{
-        padding: 16vw 0;
+        padding: 10vw 5vw;
     }
     .article_layout{
         width: 100%;
@@ -2515,6 +2624,9 @@ a{
         font-size:3.8vw;
         margin-bottom: 1vw;
     }
+    .program_content p{
+        font-size: 3.5vw;
+    }
     .article_image{
         height: 56vw;
     }
@@ -2532,7 +2644,7 @@ a{
     }
     .footer_identity p{
         width: 100%;
-        font-size: 4vw;
+        font-size: 3.3vw;
         margin-bottom: 5.3vw;
     }
     .social_media_footer{
@@ -2552,11 +2664,11 @@ a{
         margin-top: 8vw;
     }
     .menu_footer_box h3{
-        font-size: 4.3vw;
+        font-size: 3.8vw;
         margin-bottom: 2.7vw;
     }
     .menu_footer_box ul li{
-        font-size: 4vw;
+        font-size: 3.6vw;
         margin-bottom: .9vw;
     }
     .footer_second{
@@ -2577,11 +2689,11 @@ a{
         display: none;
     }
     .footer_second ul li a{
-        font-size: 3.7vw;
+        font-size: 3.3vw;
     }
 
     .footer_third p{
-        font-size: 3.6vw;
+        font-size: 3.4vw;
         margin-bottom: 6.5vw;
     }
 
@@ -2592,42 +2704,49 @@ a{
     }
     .company_data_box{
         display: flex;
-        gap: 1.2vw;
+        gap: 1.8vw;
         align-items: flex-start;
     }
     .company_data_box iconify-icon{
         font-size: 4.3vw;
+        margin-bottom: -5vw;
     }
     .company_data_box h5{
-        font-size: 4vw;
+        font-size: 3.7vw;
         margin-bottom: .9vw;
     }
 
     .banner_page{
-        height: 46vw;
-        padding-top: 13.7vw;
+        height: 34vw;
+        padding-top: 0;
     }
     .banner_page h1{
-        font-size: 9vw;
+        font-size: 5vw;
     }
     .about_layout{
         grid-template-columns: repeat(1, 1fr);
+        padding: 8vw 5vw;
     }
     .about_content{
-        padding: 5.8vw 5.7vw;
-        padding-right: 8vw;
-        background-image: url(../images/decoration_right.png);
-        background-position: top right;
-        background-size: contain;
-        background-repeat: no-repeat;
+        padding: 3vw 1vw;
+        padding-right: 0;
+    }
+    .about_image img{
+        border-left: 2vw solid #0099FF;
+        border-bottom: 4vw solid #0099FF;
     }
     .about_content h1{
-        font-size: 5vw;
-        margin-bottom: 3.1vw;
+        font-size: 4.4vw;
+        margin-bottom: 2vw;
     }
     .about_content p{
-        font-size: 3.5vw;
+        font-size: 3.3vw;
         margin-bottom: 3.3vw;
+    }
+    .about_content button{
+        font-size: 3.7vw;
+        padding: 1.4vw 4.6vw;
+        margin-top: 2.6vw;
     }
 
     .vision_mision{
@@ -2660,20 +2779,30 @@ a{
     }
 
     .legality_section{
-        padding: 10vw 4vw;
-        padding-bottom: 0;
+        padding: 13vw 4vw;
+        padding-bottom: 13vw;
     }
     .legality_heading{
         margin-bottom: 8vw;
     }
     .legality_layout{
+        display: flex;
+        flex-wrap: wrap;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 3.5vw;
-        margin-bottom: -73vw;
+        grid-gap: 4vw;
+        margin-bottom: 0;
         position: relative;
+        border-left: 1.4vw solid #0099FF;
+        padding: 3.7vw;
+        border-bottom: 3vw solid #0099FF;
+    }
+    .legality_heading span{
+        font-size: 2.8vw;
+        padding: .8vw 3vw;
     }
     .legality_heading h1{
-        font-size: 8vw;
+        font-size: 3.8vw;
+        margin-top: 3.5vw;
         margin-bottom: 2.6vw;
     }
     .legality_heading p{
@@ -2694,6 +2823,18 @@ a{
         top: 75vw;
         width: 11vw;
     }
+    .legality_layout img{
+        width: 47%;
+    }
+    .popup-content {
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
     .contact_page{
         padding: 7vw 6vw;
@@ -2701,7 +2842,7 @@ a{
         grid-gap: 8vw;
     }
     .contact_page_content h1{
-        font-size: 7vw;
+        font-size: 5vw;
         margin-bottom: 2.2vw;
     }
     .contact_page_content p{
@@ -2760,7 +2901,8 @@ a{
         padding: 4.3vw;
     }
     .contact_page_form h3{
-        font-size: 7vw;
+        font-size: 4.5vw;
+        font-weight: 600;
     }
     .contact_page_form form{
         margin-top: 4vw;
@@ -2805,15 +2947,25 @@ a{
         grid-template-columns: repeat(1, 1fr);
     }
     .cta_box{
-        padding: 15vw 8vw;
+        padding: 10vw 8vw;
+    }
+    .cta_box img{
+        width: 16vw;
+        margin-bottom: 2vw;
     }
     .cta_box h1{
-        font-size: 9vw;
+        font-size: 5vw;
         margin-bottom: 2.6vw;
     }
     .cta_box p{
-        font-size: 3.5vw;
+        font-size: 3.4vw;
         margin-bottom: 3vw;
+    }
+    .cta_box ul{
+        margin-left: 3vw;
+    }
+    .cta_box ul li{
+        font-size: 3.4vw;
     }
     .cta_box button{
         font-size: 3.5vw;
@@ -2823,7 +2975,9 @@ a{
 
    
     .program_detail_layout{
-        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 4vw 5vw;
     }
     
     .heading_program_detail{
@@ -2837,8 +2991,9 @@ a{
     }
     
     .program_detail_form{
-        padding: 6vw 4vw;
-        padding-bottom: 27vw;
+        padding: 6vw 0;
+        padding-bottom: 14vw;
+        position: inherit;
     }
     .program_detail_target_box h4{
         font-size: 3.5vw;
@@ -2863,9 +3018,28 @@ a{
     }
     .program_detail_form_box input{
         padding: 2.3vw 3.7vw;
-        font-size: 3.9vw;
+        font-size: 3.6vw;
         border-radius: 1.7vw;
         margin-bottom: 3.3vw;
+    }
+    .select_layout{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .select_layout iconify-icon{
+        font-size: 5vw;
+        position: absolute;
+        right: 2vw;
+        top: 38%;
+        transform: translateY(-50%);
+    }
+    .select_layout select{
+        padding: 2.3vw 3.7vw;
+        font-size: 3.6vw;
+        border-radius: 1.7vw;
+        margin-bottom: 3vw;
     }
     .program_detail_btn_form{
         gap: 2vw;
@@ -2884,6 +3058,25 @@ a{
         border-radius: 1.6vw;
         font-size: 3.7vw;
         padding: 2.1vw 1vw;
+    }
+
+    .donasi_heading{
+        margin-top: 4vw;
+        padding-bottom: 6vw;
+    }
+    .donasi_heading h1{
+        font-size: 3.6vw;
+    }
+    .donasi_heading h4{
+        margin-top: 3vw;
+        font-size: 3.4vw;
+        font-weight: 500;
+        padding: 1.9vw 4vw;
+        border-radius: 2vw;
+    }
+    .donasi_heading font{
+        font-size: 4.5vw;
+        margin-left: .9vw;
     }
     
     .program_detail_share {
@@ -2912,21 +3105,21 @@ a{
     }
 
     .program_detail_desc_layout{
-        padding: 12vw 2vw;
+        padding: 7vw 0;
     }
     .tab{
-        gap: 7vw;
+        gap: 5vw;
     }
     .tab button{
         border-bottom: .6vw solid transparent;
         padding-bottom: 1.1vw;
-        font-size: 5.5vw;
+        font-size: 3.6vw;
     }
     .tab button.active{
-        border-bottom: .6vw solid #187379;
+        border-bottom: .4vw solid #0099FF;
     }
     .tab_content_layout{
-        width: 95%;
+        width: 100%;
         margin-top: 7vw;
         border-radius: 3vw;
     }
@@ -2935,7 +3128,7 @@ a{
         padding: 4vw 3.5vw;
       }
       .program_detail_desc_heading h1{
-        font-size: 5vw;
+        font-size: 4.1vw;
         margin-bottom: 3vw;
       }
       .program_detail_desc_content{
@@ -2943,15 +3136,15 @@ a{
       }
       .program_detail_desc_content h1, .program_detail_desc_content h2, .program_detail_desc_content h3, .program_detail_desc_content h4, .program_detail_desc_content h5, .program_detail_desc_content h6{
         font-size: 4.3vw;
-        margin-bottom: 3vw;
+        margin-bottom: 4vw;
       }
       .program_detail_desc_content p{
         font-size: 3.2vw;
-        margin-bottom: 3.4vw;
+        margin-bottom: 4vw;
       }
       .program_detail_desc_content img{
         width: 100%;
-        margin-bottom: 3.3vw;
+        margin-bottom: 4vw;
         border-radius: 3vw;
       }
 
@@ -2971,17 +3164,17 @@ a{
         gap: 2.2vw;
       }
       .program_detail_donatur_box iconify-icon{
-        font-size: 10vw;
+        font-size: 8vw;
       }
       .program_detail_donatur_content{
-        padding-top: 1.4vw;
+        padding-top: .8vw;
       }
       .program_detail_donatur_content h4{
-        font-size: 4.5vw;
-        margin-bottom: .9vw;
+        font-size: 4vw;
+        margin-bottom: .7vw;
       }
       .program_detail_donatur_content p{
-        font-size: 3.7vw;
+        font-size: 3.5vw;
         margin-bottom: .8vw;
       }
       .program_detail_donatur_content span{
@@ -3003,7 +3196,10 @@ a{
       .artikel_section_list_container{
         width: 100%;
         overflow-x: scroll;
-        padding: 14vw 0;
+        padding: 4vw 0;
+      }
+      .artikel_section_list_container::-webkit-scrollbar{
+        display: none;
       }
       .artikel_section_list{
         width: max-content;
@@ -3017,26 +3213,28 @@ a{
         grid-template-columns: 100%;
         padding: 2.9vw;
         border-radius: 2.5vw;
-        border: .12vw solid #187379;
+        border: .12vw solid #0099FF;
         width: 60vw;
       }
       .artikel_section_image{
         height: 50vw;
         border-radius: 2vw;
-        margin-bottom: 1.8vw;
+        margin-bottom: 2.4vw;
       }
       .artikel_section_content{
         padding:0 0;
         padding-top: .85vw;
       }
       .artikel_section_content h1{
-        font-size:5.3vw;
-        margin-bottom: 3vw;
+        font-size:4vw;
+        margin-bottom: 3.7vw;
+        font-weight: 600;
       }
       .artikel_section_content span{
         gap: .6vw;
-        font-size: 3.3vw;
-        font-weight: 500;
+        font-size: 3vw;
+        font-weight: 400;
+        padding-bottom: 2vw;
       }
     
       .artikel_section_sidebar_container{
@@ -3052,7 +3250,7 @@ a{
         border-bottom: .1vw solid #FFD400;
       }
       .artikel_section_sidebar_box h3{
-        font-size:4.7vw;
+        font-size:4vw;
         margin-bottom: 3.3vw;
       }
       .search_sidebar{
@@ -3061,13 +3259,13 @@ a{
       }
       .search_sidebar input{
         padding: 2.3vw 0;
-        font-size: 4.1vw;
+        font-size: 3.6vw;
       }
       .search_sidebar iconify-icon{
-        font-size: 5vw;
+        font-size: 4.4vw;
       }
       .artikel_section_recent ul li a{
-        font-size: 4vw;
+        font-size: 3.5vw;
         gap: 1.5vw;
         padding-bottom: 4vw;
         margin-bottom: 4vw;
@@ -3078,8 +3276,8 @@ a{
         border-bottom: none;
       }
       .artikel_section_recent ul li a iconify-icon{
-        font-size: 4.6vw;
-        margin-top: .1vw;
+        font-size: 4vw;
+        margin-top: .7vw;
       }
       .artikel_section_recent ul li a:hover{
         color: #FFD400;
@@ -3123,6 +3321,7 @@ a{
         padding: 4vw;
         border-radius: 3vw;
         border: none;
+        background-color: white;
       }
       .artikel_detail_image{
         height: 54vw;
@@ -3130,12 +3329,12 @@ a{
         margin-bottom: 4vw;
       }
       .artikel_detail_heading h1{
-        font-size: 5.5vw;
-        margin-bottom: 2.5vw;
+        font-size: 4vw;
+        margin-bottom: 4vw;
       }
       .artikel_detail_content p{
-        margin-bottom: 3vw;
-        font-size: 3.5vw;
+        margin-bottom: 3.3vw;
+        font-size: 3.3vw;
       }
 
       .artikel_detail_content img{
@@ -3143,18 +3342,45 @@ a{
         margin-top: 2vw;
         border-radius: 3vw;
       }
+      .artikel_detail_share{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            border-top: .1vw solid #0099FF;
+            border-bottom: .1vw solid #0099FF;
+            padding:4vw 2vw;
+            margin-top: 6vw;
+        }
+        .artikel_detail_share h3{
+            font-size: 3.7vw;
+            font-weight: 600;
+            color:#000e18;
+        }
+        .artikel_detail_share_layout{
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+        }
+        .artikel_detail_share_box{
+            width: 7vw;
+            height: 7vw;
+        }
+        .artikel_detail_share_box iconify-icon{
+            font-size: 4vw;
+        }
 
 
       .program_page_section{
-        padding: 8vw 0;
-        gap: 9vw;
+        padding: 9vw 0;
+        gap: 10vw;
       }
       .program_page_heading{
-        margin-bottom: 4.4vw;
+        margin-bottom: 5.7vw;
         padding: 0 8vw;
       }
       .program_page_heading h1{
-        font-size: 6.5vw;
+        font-size: 4vw;
+        padding: .8vw 4vw;
       }
       .programSwiper{
         padding: 0 8vw !important;
@@ -3179,4 +3405,93 @@ a{
             width: 5.7vw;
             height: 1.6vw;
         }
+
+    .section_2_home{
+        width: 100%;
+        padding: 9vw 0;
+    }
+    .section_2_container{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .section_2_container::-webkit-scrollbar{
+        display: none;
+    }
+    .section_2_heading{
+        text-align: center;
+        padding: 0 5vw;
+    }
+    .section_2_heading span{
+        font-size: 2.8vw;
+        padding: .8vw 3vw;
+    }
+    .section_2_heading h1{
+        font-size: 3.8vw;
+        width: 80%;
+        margin: auto;
+        margin-top: 3.5vw;
+    }
+    .section_2_layout{
+        display: flex;
+        width: max-content;
+        gap: 3.7vw;
+        padding: 0 6vw;
+        margin-top: 7vw;
+    }
+    .section_2_box{
+        border-radius: 12vw 12vw 0 0;
+        background-color: #f1f6f8;
+        text-align: center;
+        padding: 3vw 5vw;
+        transition: .4s all;
+        position: relative;
+    }
+    .section_2_box span{
+        font-size: 3.2vw;
+    }
+    .section_2_icon img{
+        width: 14vw;
+        transition: .3s all;
+    }
+    .section_2_box::before{
+        bottom: 1.5vw;
+        width: 90%;
+        height: .12vw;
+    }
+
+    .section_pembayaran{
+        padding: 12vw 0;
+    }
+    .form_pembayaran{
+        width: 90%;
+    }
+    .form_pembayaran form{
+        margin-top: 7vw;
+    }
+    .form_pembayaran form input, .form_pembayaran form textarea{
+        padding: 2.1vw 3vw;
+        font-size: 3.5vw;
+        border-radius: 1.3vw;
+    }
+    .form_pembayaran_double{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3.5vw;
+        margin-bottom: 3.5vw;
+    }
+    .form_pembayaran_single{
+        margin-bottom: 3.5vw;
+    }
+    .form_pembayaran button{
+        font-size: 3.5vw;
+        width: 100%;
+        padding: 2.1vw 3vw;
+        border-radius: 1.3vw;
+    }
+
+    .btn_confirmation{
+        margin-top: 5vw;
+        font-size: 3.8vw;
+        border-radius: 2vw;
+        padding: 1.4vw 6vw;
+    }
 }

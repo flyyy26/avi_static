@@ -128,8 +128,22 @@
     </script>
     <script>
         var swiper = new Swiper(".programSlideHome", {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints: {
+            640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            },
+            768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            },
+            1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            },
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

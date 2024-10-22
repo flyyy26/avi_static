@@ -32,47 +32,49 @@
             <span>Layanan Kami</span>
             <h1>Beragam Layanan untuk Memudahkan Donasi dan Ibadah</h1>
         </div>
-        <div class="section_2_layout">
-            <a href="donasi-single.php">
-                <div class="section_2_box">
-                    <div class="section_2_icon">
-                        <img src="images/donasi_icon.svg" alt="">
+        <div class="section_2_container">
+            <div class="section_2_layout">
+                <a href="donasi-single.php">
+                    <div class="section_2_box">
+                        <div class="section_2_icon">
+                            <img src="images/donasi_icon.svg" alt="">
+                        </div>
+                        <span>Donasi</span>
                     </div>
-                    <span>Donasi</span>
-                </div>
-            </a>
-            <a href="donasi-single.php">
-                <div class="section_2_box">
-                    <div class="section_2_icon">
-                        <img src="images/infaq_icon.svg" alt="">
+                </a>
+                <a href="donasi-single.php">
+                    <div class="section_2_box">
+                        <div class="section_2_icon">
+                            <img src="images/infaq_icon.svg" alt="">
+                        </div>
+                        <span>Infaq</span>
                     </div>
-                    <span>Infaq</span>
-                </div>
-            </a>
-            <a href="detail-wakaf.php">
-                <div class="section_2_box">
-                    <div class="section_2_icon">
-                        <img src="images/wakaf_icon.svg" alt="">
+                </a>
+                <a href="detail-wakaf.php">
+                    <div class="section_2_box">
+                        <div class="section_2_icon">
+                            <img src="images/wakaf_icon.svg" alt="">
+                        </div>
+                        <span>Wakaf</span>
                     </div>
-                    <span>Wakaf</span>
-                </div>
-            </a>
-            <a href="donasi-single.php">
-                <div class="section_2_box">
-                    <div class="section_2_icon">
-                        <img src="images/fidyah_icon.svg" alt="">
+                </a>
+                <a href="donasi-single.php">
+                    <div class="section_2_box">
+                        <div class="section_2_icon">
+                            <img src="images/fidyah_icon.svg" alt="">
+                        </div>
+                        <span>Fidyah</span>
                     </div>
-                    <span>Fidyah</span>
-                </div>
-            </a>
-            <a href="detail-program.php">
-                <div class="section_2_box">
-                    <div class="section_2_icon">
-                        <img src="images/qurban_icon.png" alt="">
+                </a>
+                <a href="detail-program.php">
+                    <div class="section_2_box">
+                        <div class="section_2_icon">
+                            <img src="images/qurban_icon.png" alt="">
+                        </div>
+                        <span>Qurban</span>
                     </div>
-                    <span>Qurban</span>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
     <div class="section_4_home">
@@ -142,11 +144,81 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="program_box">
+                        <div class="program_image">
+                            <a href="detail-program.php">
+                                <img src="images/program_image.png" alt="">
+                            </a>
+                        </div>
+                        <div class="program_content">
+                            <span>Tercapai : <font>12.000.000</font></span>
+                            <h1>Ota Yatim Palestina</h1>
+                            <div class="program_share">
+                                <!-- Facebook Share -->
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Favihumanity.or.id%2Fdetail-program%2F1" 
+                                target="_blank">
+                                    <iconify-icon icon="ic:round-facebook"></iconify-icon>
+                                </a>
+                    
+                                <!-- WhatsApp Share -->
+                                <a href="https://wa.me/?text=https%3A%2F%2Favihumanity.or.id%2Fdetail-program%2F1" 
+                                target="_blank">
+                                    <iconify-icon icon="ic:round-whatsapp"></iconify-icon>
+                                </a>
+                                
+                                <!-- Telegram Share -->
+                                <a href="https://t.me/share/url?url=https%3A%2F%2Favihumanity.or.id%2Fdetail-program%2F1&text=Check+out+this+program" 
+                                target="_blank">
+                                        <iconify-icon icon="ic:baseline-telegram"></iconify-icon>
+                                </a>
+                            </div>
+                            <div class="program_button">
+                                <a href="detail-program.php"><button>Donasi Program</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="program_box">
+                        <div class="program_image">
+                            <a href="detail-program.php">
+                                <img src="images/program_image.png" alt="">
+                            </a>
+                        </div>
+                        <div class="program_content">
+                            <span>Tercapai : <font>12.000.000</font></span>
+                            <h1>Ota Yatim Palestina</h1>
+                            <div class="program_share">
+                                <!-- Facebook Share -->
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Favihumanity.or.id%2Fdetail-program%2F1" 
+                                target="_blank">
+                                    <iconify-icon icon="ic:round-facebook"></iconify-icon>
+                                </a>
+                    
+                                <!-- WhatsApp Share -->
+                                <a href="https://wa.me/?text=https%3A%2F%2Favihumanity.or.id%2Fdetail-program%2F1" 
+                                target="_blank">
+                                    <iconify-icon icon="ic:round-whatsapp"></iconify-icon>
+                                </a>
+                                
+                                <!-- Telegram Share -->
+                                <a href="https://t.me/share/url?url=https%3A%2F%2Favihumanity.or.id%2Fdetail-program%2F1&text=Check+out+this+program" 
+                                target="_blank">
+                                        <iconify-icon icon="ic:baseline-telegram"></iconify-icon>
+                                </a>
+                            </div>
+                            <div class="program_button">
+                                <a href="detail-program.php"><button>Donasi Program</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
         <div class="see_other_mobile">
-            <a href="#">Lihat Lainnya</a>
+            <a href="program.php">Lihat Lainnya</a>
         </div>
     </div>
     <div class="cta_section">
